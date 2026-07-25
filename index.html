@@ -83,21 +83,21 @@
         /* ===== PROFILE ===== */
         .profile {
             text-align: center;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
         .avatar {
-            width: 90px;
-            height: 90px;
+            width: 85px;
+            height: 85px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid rgba(255, 215, 0, 0.08);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             background: #1a1a2e;
         }
 
         .channel-name {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 800;
             color: #ffffff;
             letter-spacing: -0.3px;
@@ -111,18 +111,18 @@
         }
 
         .subhead {
-            font-size: 13px;
+            font-size: 12px;
             color: #ffd700;
             font-weight: 600;
-            margin-top: 6px;
+            margin-top: 4px;
             letter-spacing: 1px;
         }
 
         .subhead-2 {
-            font-size: 12px;
+            font-size: 11px;
             color: #94a3b8;
             font-weight: 500;
-            margin-top: 4px;
+            margin-top: 2px;
         }
 
         /* ================================================================ */
@@ -187,9 +187,16 @@
             50% { transform: translateY(-4px) rotate(10deg); }
         }
 
-        /* ===== SECONDARY CTA – Margin adjustment ===== */
+        /* ===== PRIMARY CTA ===== */
+        .cta-primary {
+            margin: 10px 0 14px;
+            padding: 16px 0;
+        }
+
+        /* ===== SECONDARY CTA – MOVED UP SIGNIFICANTLY ===== */
         .cta-secondary {
-            margin-bottom: 16px;
+            margin-top: -14px;
+            margin-bottom: 14px;
             padding: 14px 0;
             font-size: 15px;
         }
@@ -198,8 +205,8 @@
         .features {
             display: flex;
             flex-direction: column;
-            gap: 8px;
-            margin-bottom: 18px;
+            gap: 6px;
+            margin-bottom: 14px;
         }
 
         .feature-item {
@@ -209,7 +216,7 @@
             font-size: 13px;
             font-weight: 450;
             color: #e2e8f0;
-            padding: 4px 0;
+            padding: 3px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.02);
         }
 
@@ -226,26 +233,26 @@
             flex: 1;
         }
 
-        /* ===== URGENCY BANNER ===== */
+        /* ===== URGENCY BANNER – Reduced margin ===== */
         .urgency-banner {
             background: rgba(0, 212, 255, 0.02);
             border-radius: 16px;
-            padding: 12px 16px;
+            padding: 10px 14px;
             text-align: center;
-            margin-bottom: 18px;
+            margin-bottom: 12px;
             border: 1px solid rgba(0, 212, 255, 0.04);
         }
 
         .urgency-banner .title {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             color: #00d4ff;
         }
 
         .urgency-banner .sub {
-            font-size: 11px;
+            font-size: 10px;
             color: #94a3b8;
-            margin-top: 4px;
+            margin-top: 2px;
         }
 
         /* ===== DISCLAIMER ===== */
@@ -255,12 +262,12 @@
             text-align: center;
             line-height: 1.6;
             border-top: 1px solid rgba(255, 255, 255, 0.02);
-            padding-top: 14px;
+            padding-top: 12px;
         }
 
         /* ===== FOOTER ===== */
         .footer {
-            margin-top: 12px;
+            margin-top: 10px;
             text-align: center;
         }
 
@@ -282,32 +289,40 @@
         /* ===== RESPONSIVE ===== */
         @media (max-width: 380px) {
             .card {
-                padding: 20px 14px 16px;
+                padding: 18px 12px 16px;
                 border-radius: 24px;
             }
             .avatar {
-                width: 72px;
-                height: 72px;
+                width: 65px;
+                height: 65px;
             }
             .channel-name {
-                font-size: 20px;
+                font-size: 18px;
             }
             .subhead {
-                font-size: 11px;
-            }
-            .subhead-2 {
                 font-size: 10px;
             }
-            .cta-primary,
-            .cta-secondary {
+            .subhead-2 {
+                font-size: 9px;
+            }
+            .cta-primary {
                 font-size: 14px;
                 padding: 14px 0;
             }
+            .cta-secondary {
+                font-size: 13px;
+                padding: 12px 0;
+                margin-top: -10px;
+            }
             .feature-item {
-                font-size: 12px;
+                font-size: 11px;
             }
             .urgency-banner .title {
-                font-size: 12px;
+                font-size: 11px;
+            }
+            .urgency-banner {
+                padding: 8px 10px;
+                margin-bottom: 10px;
             }
         }
 
@@ -317,16 +332,19 @@
                 padding: 36px 28px 30px;
             }
             .avatar {
-                width: 110px;
-                height: 110px;
+                width: 100px;
+                height: 100px;
             }
             .channel-name {
-                font-size: 28px;
+                font-size: 26px;
             }
             .cta-primary,
             .cta-secondary {
                 font-size: 18px;
                 padding: 18px 0;
+            }
+            .cta-secondary {
+                margin-top: -16px;
             }
         }
     </style>
@@ -395,7 +413,7 @@
             <div class="sub">Limited Seats • Active Community</div>
         </div>
 
-        <!-- ===== BUTTON 2 – SAME SLIDING COLOR BLINK ===== -->
+        <!-- ===== BUTTON 2 – SAME SLIDING COLOR BLINK (MOVED UP) ===== -->
         <a href="https://t.me/+Qhy0UhSzEDk2MzQ1" class="cta-secondary" target="_blank" rel="noopener noreferrer">
             <span class="icon">✦</span> Join Free Telegram Channel
         </a>
